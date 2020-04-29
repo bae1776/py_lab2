@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 def to_intList(listStr):  #listStr is const - String을 정수 list로 바꾸어서 반환합니다.
-	lst = listStr.strip("[]").split(',')
+	lst = listStr.strip("[] ").split(',')
 
 	for i in range(0, len(lst)):
 		if (not lst[i].isdigit()):
